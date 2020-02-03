@@ -100,3 +100,41 @@ infoEmdPsoRbf_01 = getEmdPsoRbfInfoAdvanced(
   trace.stats = T, 
   REPORT = 10
 )
+
+infoEmdPsoRbf_02 = getEmdPsoRbfInfoAdvanced(
+  data = maxTemperatureByDay,
+  nInput = 3, 
+  nHidden = 4, 
+  nOutput = 1, 
+  nTest = 30, 
+  nOverlap = 5, 
+  nLastOverlap = 3, 
+  boundary = "none", 
+  max.imf = 5, 
+  fnscale = 1, 
+  maxit = 150, 
+  reltol = 0.02, 
+  max.restart = 3, 
+  trace = 1, 
+  trace.stats = T, 
+  REPORT = 10
+)
+
+infoEmdPsoRbf_03 = getEmdPsoRbfInfoAdvanced(
+  data = maxTemperatureByDay,
+  nInput = 3, 
+  nHidden = 4, 
+  nOutput = 1, 
+  nTest = 30, 
+  nOverlap = 5, 
+  nLastOverlap = 3, 
+  boundary = "none", 
+  max.imf = 2, 
+  fnscale = 1, 
+  maxit = 150, 
+  reltol = 0.02, 
+  max.restart = 3, 
+  trace = 1, 
+  trace.stats = T, 
+  REPORT = 10
+)
