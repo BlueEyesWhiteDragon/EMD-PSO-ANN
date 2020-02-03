@@ -5,6 +5,8 @@ library("fUnitRoots")
 library("EMD")
 library("pso")
 
+### 测试一下乱码
+
 ### 研究一下高阶版加载文件
 ### 自定义函数文件夹位置
 FOLDER_PATH = paste(getwd(), "/SDF", sep = "")
