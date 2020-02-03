@@ -7,7 +7,7 @@ library("pso")
 
 ### 研究一下高阶版加载文件
 ### 自定义函数文件夹位置
-FOLDER_PATH = "G:/RStudioProject/EMD-PSO-ANN/SDF"
+FOLDER_PATH = paste(getwd(), "/SDF", sep = "")
 
 ### 获得所有自定义函数的绝对路径
 sdfVec = list.files(path = FOLDER_PATH, full.names = T, pattern = "*.[R|r]$")
@@ -18,7 +18,7 @@ for(i in 1:length(sdfVec)) {
 }
 
 ### 导入数据
-FILE_PATH = "G://00JGW//PostGraduate//00毕业论文//03处理后的数据//www.tianqihoubao.com//"
+FILE_PATH = paste(getwd(), "/DATA/", sep = "")
 FILE_NAME = "整合后数据.csv"
 FILE = paste(FILE_PATH, FILE_NAME, sep = '')
 DATA = read.table(FILE, header = T, sep = ',')
