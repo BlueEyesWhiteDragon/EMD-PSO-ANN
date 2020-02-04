@@ -138,3 +138,50 @@ infoEmdPsoRbf_03 = getEmdPsoRbfInfoAdvanced(
   trace.stats = T, 
   REPORT = 10
 )
+
+### 增加一些实验
+infoRbf_04 = getRbfInfoAdvanced(
+  data = maxTemperatureByDay,
+  nInput = 3,  
+  nHidden = 4,
+  nOutput = 1,  
+  nTest = 100, 
+  nOverlap = 30, 
+  nLastOverlap = 10
+)
+
+infoPsoRbf_04 = getPsoRbfInfoAdvanced(
+  data = maxTemperatureByDay,
+  nInput = 3, 
+  nHidden = 4, 
+  nOutput = 1,  
+  nTest = 100, 
+  nOverlap = 30, 
+  nLastOverlap = 10, 
+  fnscale = 1,
+  maxit = 150,
+  reltol = 0.02, 
+  max.restart = 3, 
+  trace = 1,
+  trace.stats = T,
+  REPORT = 10
+)
+
+infoEmdPsoRbf_03 = getEmdPsoRbfInfoAdvanced(
+  data = maxTemperatureByDay,
+  nInput = 3, 
+  nHidden = 4, 
+  nOutput = 1, 
+  nTest = 100, 
+  nOverlap = 30, 
+  nLastOverlap = 10, 
+  boundary = "none", 
+  max.imf = 2, 
+  fnscale = 1, 
+  maxit = 150, 
+  reltol = 0.02, 
+  max.restart = 3, 
+  trace = 1, 
+  trace.stats = T, 
+  REPORT = 10
+)
