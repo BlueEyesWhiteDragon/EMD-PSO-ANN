@@ -167,7 +167,7 @@ infoPsoRbf_04 = getPsoRbfInfoAdvanced(
   REPORT = 10
 )
 
-infoEmdPsoRbf_03 = getEmdPsoRbfInfoAdvanced(
+infoEmdPsoRbf_04 = getEmdPsoRbfInfoAdvanced(
   data = maxTemperatureByDay,
   nInput = 3, 
   nHidden = 4, 
